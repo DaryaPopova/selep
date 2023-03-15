@@ -16,4 +16,3 @@ if __name__ == '__main__':
         browser.find_element(By.ID, 'input_result').send_keys(result)
         browser.find_element(By.ID, 'sendbutton').click()
         time.sleep(60)
-

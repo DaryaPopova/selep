@@ -12,5 +12,3 @@ if __name__ == '__main__':
             number = int(element.text)
             result += number
         print(result)
-
-

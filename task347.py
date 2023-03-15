@@ -10,6 +10,3 @@ if __name__ == '__main__':
         browser.find_element(By.CLASS_NAME, 'btn').click()
         result_text = browser.find_element(By.ID, 'result').text
         print(result_text)
-
-
-
