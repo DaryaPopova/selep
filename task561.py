@@ -9,4 +9,3 @@ if __name__ == '__main__':
             browser.refresh()
         print(browser.find_element(By.ID, 'result').text)
         time.sleep(60)
-
