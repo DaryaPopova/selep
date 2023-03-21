@@ -6,5 +6,8 @@ if __name__ == '__main__':
         cookies = browser.get_cookies()
         result: int = 0
         for cookie in cookies:
-            result += int(cookie['value'])
+            name_number = int(str(cookie['name']).replace("secret_cookie_", ""))
+            value_number = int(cookie['value'])
+            if name_number % 10 == 0 or name_number % 2 == 0:
+                result += value_number
         print(result)
