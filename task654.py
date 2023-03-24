@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-def count_spans_sum() -> int:
+def count_elements_sum() -> int:
     with webdriver.Chrome() as browser:
         browser.get('https://parsinger.ru/infiniti_scroll_2/')
         time.sleep(1)
@@ -24,5 +24,5 @@ def count_spans_sum() -> int:
 
 
 if __name__ == '__main__':
-    summ = count_spans_sum()
+    summ = count_elements_sum()
     print(summ)
